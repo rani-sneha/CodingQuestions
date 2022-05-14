@@ -3,11 +3,12 @@ using namespace std;
 
 int main()
 {
-	int n;
+	int n, a;
 	bool flag=1;
 	cout<<"Enter a Number to check if it is a prime number or not"<<endl;
 	cin>>n;
-	for(int i=2; i<n; i++)
+	a=(int)sqrt(n);
+	for(int i=2; i<=a; i++)
 	{
 		if(n%i==0)
 		{
